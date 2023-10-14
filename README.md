@@ -1,5 +1,7 @@
 # Website for Praxis Heike Fischer
 
+[![statichost.eu status](https://builder.statichost.eu/draculente-praxis-heikefischer/status.svg)](https://builder.statichost.eu/draculente-praxis-heikefischer/)
+
 ## Gitmoji
 
 This project uses [gitmoji](https://gitmoji.dev/) for commit messages. Please use it for all commits.
