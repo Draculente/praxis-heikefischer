@@ -1,6 +1,7 @@
 ---
 import Menu from "../components/Menu.astro";
 import { ViewTransitions } from "astro:transitions";
+import "@fontsource/merriweather";
 
 interface Props {
   title: string;
@@ -34,8 +35,5 @@ const { title, currentPage } = Astro.props;
         <slot />
       </div>
     </div>
-    <style is:global>
-      @import url("/merriweather.css");
-    </style>
   </body>
 </html>
