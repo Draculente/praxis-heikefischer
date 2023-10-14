@@ -1,0 +1,27 @@
+---
+type Props = {
+  currentPage: string;
+};
+
+const { currentPage } = Astro.props;
+---
+
+<nav>
+  <ul
+    class="relative z-10 flex flex-row rounded-2xl my-6 justify-evenly p-3 bg-baby-blue md:rounded-none md:w-80 md:ml-auto md:bg-baby-blue/0 lg:my-0 lg:pt-10"
+  >
+    <li>
+      <a href="/" class={currentPage === "home" ? "underline" : ""}
+        >Startseite</a
+      >
+    </li>
+    <li>
+      <a
+        href="/impressum"
+        class={currentPage === "impressum" ? "underline" : ""}
+      >
+        Impressum
+      </a>
+    </li>
+  </ul>
+</nav>

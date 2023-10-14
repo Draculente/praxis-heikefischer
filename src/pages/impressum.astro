@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const tel = "0761 - 42 999 898";
+const email = "Kontakt@PraxisHeikeFischer.de";
+const address = "Uhlandstraße 14 a, 79102 Freiburg";
+const mailto = `mailto:${email}`;
+---
+
+<Layout title="Impressum" currentPage="impressum">
+  <main class="pb-10 lg:pt-20 lg:px-72">
+    <!-- <h1 class="text-4xl pb-4">Impressum</h1> -->
+    <p>Angaben gemäß § 5 TMG:</p>
+
+    <h2 class="text-xl mt-10 mb-2">Dipl. Psych. Heike Fischer</h2>
+    <p>{address}</p>
+    <p>Tel.: {tel}</p>
+    <p>Email: <a href={mailto}>{email}</a></p>
+
+    <h2 class="text-xl mt-10 mb-2">Aufsichtsbehörde</h2>
+    <p>
+      Landespsychotherapeutenkammer Baden-Württemberg (LPK BW) – Körperschaft
+      des öffentlichen Rechts
+    </p>
+    <p>Jägerstr. 40, 70174 Stuttgart</p>
+    <p>Tel: 0711 674470-0</p>
+    <a href="https://www.lpk-bw.de">Web: www.lpk-bw.de</a>
+    <p>Email: <a href="mailto:info@lpk-bw.de">info@lpk-bw.de</a></p>
+
+    <h2 class="text-xl mt-10 mb-2">Kassenärtzliche Zulassung</h2>
+    <p>Kassenärztliche Vereinigung Baden-Württemberg</p>
+    <p>Sundgauallee 27, 79114 Freiburg</p>
+    <p><a href="https://www.kvbawue.de/">Web: www.kvbawue.de</a></p>
+    <p>Tel.: 0761 884-0</p>
+    <p>
+      <a href="mailto:bdfreiburg@kvbawue.de">Email: bdfreiburg@kvbawue.de</a>
+    </p>
+
+    <h2 class="text-xl mt-10 mb-2">
+      Berufsbezeichnung und berufsrechtliche Regelungen
+    </h2>
+    <p>Berufsbezeichnung: Psychologische Psychotherapeutin</p>
+    <p>Zuständige Kammer: Landespsychotherapeutenkammer Baden-Württemberg</p>
+    <p>
+      Verliehen durch: Regierungspräsidium Stuttgart (Bundesrepublik
+      Deutschland)
+    </p>
+    <p>
+      Berufsrechtliche Regelungen: Gesetz über das Berufsrecht und die Kammern
+      der Heilberufe (Heilberufe-Kammergesetz - HBKG):
+      <a
+        href=" https://www.landesrecht-bw.de/jportal/?quelle=jlink&query=HeilBKG+BW&psml=bsbawueprod.psml&max=true&aiz=true"
+        >www.landesrecht-bw.de</a
+      >
+    </p>
+  </main>
+</Layout>
+
+<style>
+  a {
+    @apply underline;
+  }
+</style>

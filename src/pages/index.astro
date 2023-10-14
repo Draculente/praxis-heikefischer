@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { MapPin, Phone } from "lucide-astro";
+---
+
+<Layout title="Heike Fischer" currentPage="home">
+  <main
+    class="flex flex-col justify-center items-center lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:w-full lg:overflow-hidden"
+  >
+    <div class="flex flex-col lg:flex-row lg:gap-10 items-center">
+      <div class="w-fit flex justify-center items-center">
+        <img
+          class="rounded-3xl lg:w-5/6 lg:rounded-[4rem]"
+          src="/images/heike3.png"
+          alt="Heike lächelt in die Kamera. Sie sitzt. Im Hintergrund sieht man viele grüne Pflanzen. Sie trägt eine schlichte Kette und Ohrringe. Sie hat ein rotes Kleid mit abstrakten, bunten Blättern an."
+        />
+      </div>
+      <section
+        id="content"
+        class="flex flex-col gap-4 mt-7 text-lg pb-10 w-fit"
+      >
+        <p class="flex flex-row gap-2 items-center">
+          Psychotherapeutische Praxis
+        </p>
+        <h1 class="font-bold text-3xl">Heike Fischer</h1>
+        <p class="">
+          Diplom-Psychologin <br />Psychologische Psychotherapeutin
+        </p>
+
+        <hr class="invisible lg:visible my-3 lg:w-[115%]" />
+
+        <div class="flex flex-row gap-3 justify-start lg:gap-2">
+          <div class="pt-1.5"><MapPin size="20" /></div>
+          <div>
+            <p class="leading-6 lg:-mb-1">
+              Uhlstraße 14a <br />Freiburg im Breisgau
+            </p>
+            <a
+              class="text-xs font-thin"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/place/Uhlandstraße+14A,+79102+Freiburg+im+Breisgau/"
+              >Google Maps &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-3 justify-start lg:gap-2">
+          <div class="pt-1.5"><Phone size="20" /></div>
+          <div>
+            <p class="leading-6 lg:-mb-1">+49 761 42 999 898</p>
+            <a
+              class="text-xs font-thin"
+              href="tel:+49 761 42 999 898"
+              target="_blank"
+              rel="noopener noreferrer">Anrufen &rarr;</a
+            >
+          </div>
+        </div>
+
+        <p class="text-sm">Termine nach Vereinbarung</p>
+      </section>
+    </div>
+  </main>
+</Layout>
+<!-- 
+<style>
+  #image {
+    background-image: url(/images/heike.jpeg);
+    /* width: 300px;
+    height: 300px; */
+    background-size: 800px 600px;
+    background-position: -300px -30px;
+    overflow: hidden;
+  }
+</style> -->

@@ -1,0 +1,41 @@
+---
+import Menu from "../components/Menu.astro";
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+  currentPage: string;
+}
+
+const { title, currentPage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- TODO: add description -->
+    <meta
+      name="description"
+      content="Heike Fischer - Psychologische Psychotherapeutin"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <ViewTransitions />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Heike Fischer | {title}</title>
+  </head>
+  <body
+    class="mx-6 bg-not-white font-serif text-not-black bg-no-repeat bg-cover lg:bg-bg-pattern min-h-screen"
+  >
+    <div id="slot" class="h-full max-w-6xl mx-auto">
+      <Menu currentPage={currentPage} />
+      <div transition:animate="fade">
+        <slot />
+      </div>
+    </div>
+    <style is:global>
+      @import url("/merriweather.css");
+    </style>
+  </body>
+</html>
