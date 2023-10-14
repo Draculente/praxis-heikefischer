@@ -1,0 +1,5 @@
+domains:
+  # Primary domain
+  - www.praxisheikefischer.de
+  # Domains that redirect to the primary
+  - praxisheikefischer.de
